@@ -1,10 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const morgan = require('./middleware/morgan');
-const {
-  errorProductionResponse,
-  errorDevelopmentResponse,
-} = require('./middleware/errorHandler');
+const { errorHandler, morgan, healthCheck } = require('./middleware');
 
 const app = express();
 
@@ -17,14 +13,12 @@ app.use(
   }),
 );
 
-app.use('/', (req, res) => {
-  res.json('Hello world');
-});
+app.use(`${'/healthcheck'} || ${'/'}`, healthCheck);
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(errorProductionResponse);
+  app.use(errorHandler.errorProductionResponse);
 } else {
-  app.use(errorDevelopmentResponse);
+  app.use(errorHandler.errorDevelopmentResponse);
 }
 
 module.exports = app;
