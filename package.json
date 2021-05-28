@@ -10,7 +10,7 @@
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "express-healthcheck": "^0.1.0",
-    "mongoose": "^5.12.9",
+    "mongoose": "^5.12.10",
     "morgan": "^1.10.0",
     "swagger-ui-express": "^4.1.6",
     "winston": "^3.3.3"
