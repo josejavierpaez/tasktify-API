@@ -8,11 +8,11 @@ services:
     ports:
       - '4000:4000'
     links:
-      - mongodb
+      - tasktify-mongodb
     volumes:
       - .:/usr/src/app
 
-  mongodb:
+  tasktify-mongodb:
     container_name: my-mongodb
     image: mongo
     ports:

@@ -6,11 +6,12 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 COPY yarn.lock ./
-
+COPY entrypoint.sh ./
+RUN chmod +x entrypoint.sh
 RUN yarn install
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["yarn","dev"]
+ENTRYPOINT ["./entrypoint.sh"]
