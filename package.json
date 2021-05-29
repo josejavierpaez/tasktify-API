@@ -10,6 +10,7 @@
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "express-healthcheck": "^0.1.0",
+    "mongo-seeding": "^3.6.0",
     "mongoose": "^5.12.9",
     "morgan": "^1.10.0",
     "swagger-ui-express": "^4.1.6",
@@ -23,6 +24,7 @@
   },
   "scripts": {
     "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "seed-db": "node ./src/scripts/seedDb.js"
   }
 }
