@@ -1,0 +1,26 @@
+[
+  {
+    "isActive": true,
+    "firstName": "javier",
+    "lastName": "paez",
+    "age": 21,
+    "email": "javierpaez@hotmail.com",
+    "password": "$2b$10$IaQ9Cg3ZGSM5qUiN0AAH3eplcd.wLJSzycrv0U3rbUe4754IMRncm",
+    "TeamId": [],
+    "createAt": "2021-5-29",
+    "updateAt": "2021-5-29",
+    "deleteAt": ""
+  },
+  {
+    "isActive": true,
+    "firstName": "javier",
+    "lastName": "paez",
+    "age": 21,
+    "email": "javierpaez@hotmail.com",
+    "password": "$2b$10$IaQ9Cg3ZGSM5qUiN0AAH3eplcd.wLJSzycrv0U3rbUe4754IMRncm",
+    "TeamId": [],
+    "createAt": "2021-5-29",
+    "updateAt": "2021-5-29",
+    "deleteAt": ""
+  }
+]
